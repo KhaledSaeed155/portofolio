@@ -49,7 +49,11 @@ export default function Contact() {
 
   const item: Variants = {
     hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   return (
@@ -77,25 +81,29 @@ export default function Contact() {
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{  amount: 0.2 }}
+          viewport={{ amount: 0.2 }}
         >
           {contacts.map((contact, index) => (
-            <motion.a
+            <motion.div
               key={index}
-              href={contact.link}
-              target="_blank"
-              rel="noopener noreferrer"
               variants={item}
-              className="cursor-pointer flex items-center gap-4 p-5 
-                bg-cyan-900/20 backdrop-blur-md text-white rounded-lg shadow-md 
-                hover:shadow-cyan-500/30 hover:scale-105 transition-all"
+              className="cursor-pointer"
             >
-              {contact.icon}
-              <div className="text-left select-text">
-                <h3 className="text-lg font-semibold">{contact.name}</h3>
-                <p className="opacity-80">{contact.text}</p>
-              </div>
-            </motion.a>
+              <Link
+                href={contact.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-5 
+                  bg-cyan-900/20 backdrop-blur-md text-white rounded-lg shadow-md 
+                  hover:shadow-cyan-500/30 hover:scale-105 transition-all"
+              >
+                {contact.icon}
+                <div className="text-left select-text">
+                  <h3 className="text-lg font-semibold">{contact.name}</h3>
+                  <p className="opacity-80">{contact.text}</p>
+                </div>
+              </Link>
+            </motion.div>
           ))}
         </motion.div>
       </div>

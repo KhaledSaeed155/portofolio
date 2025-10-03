@@ -63,8 +63,8 @@ export default function Technology() {
             <motion.div
               key={index}
               variants={item}
-              className="bg-cyan-900/20 backdrop-blur-md text-white px-6 py-4 
-              rounded-xl shadow-green-300/20 hover:shadow-xl hover:scale-105 
+              className="bg-cyan-900/20 backdrop-blur-[5px] text-white px-6 py-4 
+              rounded-xl shadow-[#0076b187]  hover:shadow-xl hover:scale-105 
               transition-all duration-300 flex items-center justify-center font-medium"
             >
               {itemTech.name}

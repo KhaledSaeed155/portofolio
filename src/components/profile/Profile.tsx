@@ -23,7 +23,7 @@ export default function Profile() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="absolute top-3 left-6"
         >
-          <span className="badge bg-blue-200/10 backdrop-blur-[20px] border-[#0076b187] text-xs px-5 py-5 hover:shadow-[inset_0px_0px_25px_#0076b187] shadow-[inset_0px_0px_10px_#0076b187] font-bold text-white">
+          <span className="badge bg-gray-800/90 backdrop-blur-md border-[#0076b187] text-xs px-5 py-5 hover:shadow-[inset_0px_0px_25px_#0076b187] shadow-[inset_0px_0px_10px_#0076b187] font-bold text-white">
           <Circle size={15} className="me-1 text-green-300 " fill=" rgb(2, 255, 44)" /> Open for Projects
           </span>
         </motion.div>

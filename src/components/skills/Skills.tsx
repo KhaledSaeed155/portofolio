@@ -58,7 +58,7 @@ export default function Skills() {
             <div
               key={index}
               className="bg-cyan-900/10 backdrop-blur-md text-white p-6 rounded-2xl 
-              shadow-2xl hover:shadow-green-400/40 transition-transform hover:scale-105 duration-500"
+              shadow-2xl hover:shadow-[inset_0px_0px_30px_#0076b187] shadow-[inset_0px_0px_20px_#0076b187] transition-transform hover:scale-105 duration-500"
             >
               <div className="flex flex-col items-center gap-4">
                 {skill.icon}

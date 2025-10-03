@@ -5,10 +5,11 @@ import {ReactTyped, Typed} from "react-typed";
 import React from "react";
 import { FaWhatsapp, FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import { Circle } from 'lucide-react';
 
 export default function Profile() {
   return (
-    <div className="w-full max-w-sm my-auto mx-auto pt-20">
+    <div className="w-full max-w-4xl my-auto mx-auto pt-20">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -20,10 +21,10 @@ export default function Profile() {
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="absolute top-3 left-3"
+          className="absolute top-3 left-6"
         >
-          <span className="badge badge-success text-xs px-3 py-2 shadow font-bold text-black">
-            ✅ Open for Projects
+          <span className="badge bg-cyan-500/90 border-0 text-xs px-5 py-4 shadow font-bold text-white">
+          <Circle size={15} className="me-1 text-green-300 " fill=" rgb(2, 255, 44)" /> Open for Projects
           </span>
         </motion.div>
 
@@ -48,7 +49,7 @@ export default function Profile() {
         <div className="card-body text-center text-white">
           {/* Animated Name */}
           <motion.h2
-            className="card-title text-2xl font-bold"
+            className="card-title text-2xl font-bold text-center mx-auto text-3xl"
             initial={{ y: -30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
@@ -74,7 +75,7 @@ export default function Profile() {
 
           {/* Paragraph (appears after typing) */}
           <motion.p
-            className="text-sm opacity-80 mt-3"
+            className="text-sm opacity-80 mt-3 text-xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 3.5, duration: 0.8 }}
@@ -95,7 +96,7 @@ export default function Profile() {
             <Link href="mailto:khaledbeboo155@gmail.com"> <motion.button
               whileHover={{ scale: 1.1, boxShadow: "0px 0px 15px #06b6d4" }}
               whileTap={{ scale: 0.95 }}
-              className="btn bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 rounded-full shadow-md"
+              className="btn bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 rounded-full shadow-md border-0"
             >
               Hire Me
             </motion.button></Link>
@@ -103,7 +104,7 @@ export default function Profile() {
   <motion.button
     whileHover={{ scale: 1.1, boxShadow: "0px 0px 15px #06b6d4" }}
     whileTap={{ scale: 0.95 }}
-    className="btn bg-gradient-to-r from-green-500 to-cyan-500 text-white px-3 translate-x-[-4px] rounded-full shadow-md ml-3"
+    className="btn bg-gradient-to-r from-green-500 to-cyan-500 text-white px-3 translate-x-[-4px] rounded-full shadow-md ml-3 border-0"
   >
     Download CV
   </motion.button>

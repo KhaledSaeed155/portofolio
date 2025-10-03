@@ -8,31 +8,31 @@ import Skills from "@/components/skills/Skills";
 
 export default function Home() {
   return (
-    <div className="animated-bg text-white relative min-h-screen">
+    <div className=" text-white relative min-h-screen">
       {/* Animated Shapes */}
+      {/* <div className="shape"></div>
       <div className="shape"></div>
       <div className="shape"></div>
       <div className="shape"></div>
       <div className="shape"></div>
-      <div className="shape"></div>
-      <div className="shape"></div>
+      <div className="shape"></div> */}
 
-      
+
       <Navbar />
 
-   
-      
-     
-          <Profile />
-      
 
-      
-        
-          <About />
-          <Skills/>
-          <Projects/>
-          <Services/>
-          <Contact/>   
-           </div>
+
+
+      <Profile />
+
+
+
+
+      <About />
+      <Skills />
+      <Projects />
+      <Services />
+      <Contact />
+    </div>
   );
 }

@@ -17,19 +17,15 @@ export default function Services() {
     <section className="max-w-6xl mx-auto px-6 py-12" id="services">
       {/* Title */}
       <motion.h2
-        className="text-3xl font-bold text-center text-cyan-400 mb-3"
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        My Services
-      </motion.h2>
-      <motion.span
-        className="block w-16 h-1 bg-green-500 mx-auto mt-2 rounded-full mb-8"
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-      ></motion.span>
+          className="text-3xl md:text-4xl mb-10  text-center font-bold bg-blue-200/10 backdrop-blur-[10px] shadow-xl rounded-2xl py-5 w-[50%] mx-auto mb-1"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Services
+        </motion.h2>
+   
+
 
       {/* Services Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

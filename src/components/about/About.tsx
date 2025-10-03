@@ -11,10 +11,15 @@ export default function About() {
     >
       <div className="max-w-5xl mx-auto px-6 bg-blue-950/10 p-10">
         {/* Title with Typing Effect */}
-       <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent text-center relative mb-8">
-  About
-  <span className="block w-16 h-1 bg-green-500 mx-auto mt-2 rounded-full"></span>
-</h2>
+        <motion.h2
+          className="text-3xl md:text-4xl mb-10  text-center font-bold bg-blue-200/10 backdrop-blur-[10px] shadow-xl rounded-2xl py-5 w-[50%] mx-auto mb-1"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          About
+        </motion.h2>
+   
 
 
         {/* Animated Card */}

@@ -61,19 +61,14 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Title */}
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-cyan-400 mb-1"
+          className="text-3xl md:text-4xl mb-10  font-bold bg-blue-200/10 backdrop-blur-[10px] shadow-xl rounded-2xl py-5 w-[50%] mx-auto mb-1"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           Contact
         </motion.h2>
-        <motion.span
-          className="block w-16 h-1 bg-green-500 mx-auto mt-2 rounded-full mb-8"
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          transition={{ duration: 0.6 }}
-        ></motion.span>
+   
 
         {/* Animated cards */}
         <motion.div

@@ -41,9 +41,15 @@ export default function Skills() {
   return (
     <section className="w-full py-16" id="skills">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-cyan-400 mb-1">
+      <motion.h2
+          className="text-3xl md:text-4xl mb-10  text-center font-bold bg-blue-200/10 backdrop-blur-[10px] shadow-xl rounded-2xl py-5 w-[50%] mx-auto mb-1"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           Skills
-        </h2>
+        </motion.h2>
+   
          <span className="block w-16 h-1 bg-green-500 mx-auto mt-2 rounded-full mb-5"></span>
 
         {/* Grid */}

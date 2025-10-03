@@ -8,7 +8,7 @@ export default function Navbar() {
   className="
     fixed top-0 left-0 right-0 z-30
     flex flex-row justify-center gap-5
-    p-4 bg-cyan-950 text-white shadow-lg rounded-none
+    p-4 bg-blue-200/10 backdrop-blur-[8px] shadow-xl rounded-2xl
 
     lg:top-1/2 lg:-translate-y-1/2 lg:right-4 lg:left-auto
     lg:flex-col lg:gap-8 lg:p-6 lg:rounded-full
